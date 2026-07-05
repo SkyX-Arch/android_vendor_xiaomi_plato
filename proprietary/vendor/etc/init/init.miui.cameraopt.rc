@@ -1,0 +1,11 @@
+on early-boot
+    mkdir /data/miuilog/camera 0775 system system
+
+on property:persist.sys.miui.camera.algo.disable=1
+    setprop persist.vendor.camera.forceMFNR 1
+    setprop persist.vendor.sat.binningModeW 1
+    setprop vendor.debug.camera.forceHWMFFixedNumOfFrames 3
+    setprop persist.vendor.camera.nofacemlEnable 0
+    setprop persist.vendor.camera.mlshortGain 2000
+    stop vendor.camera-provider
+    start vendor.camera-provider

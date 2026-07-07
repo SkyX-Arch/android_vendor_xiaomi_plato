@@ -147,9 +147,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/plato/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/plato/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/plato/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/xiaomi/plato/proprietary/vendor/etc/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res.bin \
-    vendor/xiaomi/plato/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
-    vendor/xiaomi/plato/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
     vendor/xiaomi/plato/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_bootup.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_bootup.pnscr \
     vendor/xiaomi/plato/proprietary/vendor/etc/sn100u_ese_disableIso.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_ese_disableIso.pnscr \

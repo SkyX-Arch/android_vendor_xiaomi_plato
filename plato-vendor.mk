@@ -11,7 +11,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/plato/proprietary/vendor/etc/nn/ot/neuron_detection.mdla3_0:$(TARGET_COPY_OUT_VENDOR)/etc/nn/ot/neuron_detection.mdla3_0 \
     vendor/xiaomi/plato/proprietary/vendor/etc/csd_model.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/csd_model.tflite \
     vendor/xiaomi/plato/proprietary/vendor/etc/barrage_v3.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/barrage_v3.tflite \
-     vendor/xiaomi/plato/proprietary/vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so.hbtf:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so.hbtf \
+    vendor/xiaomi/plato/proprietary/vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so.hbtf:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so.hbtf \
     vendor/xiaomi/plato/proprietary/vendor/etc/model_0828.onnx:$(TARGET_COPY_OUT_VENDOR)/etc/model_0828.onnx \
     vendor/xiaomi/plato/proprietary/vendor/etc/perfinit_bdsize_zram.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perfinit_bdsize_zram.conf \
     vendor/xiaomi/plato/proprietary/vendor/etc/perfinit.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perfinit.conf \
@@ -33,6 +33,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/plato/proprietary/vendor/etc/aee-config:$(TARGET_COPY_OUT_VENDOR)/etc/aee-config \
     vendor/xiaomi/plato/proprietary/vendor/etc/aee-commit:$(TARGET_COPY_OUT_VENDOR)/etc/aee-commit\
     vendor/xiaomi/plato/proprietary/vendor/etc/cameraopt.json:$(TARGET_COPY_OUT_VENDOR)/etc/cameraopt.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
+    vendor/xiaomi/plato/proprietary/vendor/etc/xgf.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/xgf.cfg \
+    vendor/xiaomi/plato/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/VideoLog_dynamic.ds:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.ds \
+    vendor/xiaomi/plato/proprietary/vendor/etc/thermalbreakboostconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/thermalbreakboostconfig.xml\
+    vendor/xiaomi/plato/proprietary/vendor/etc/screen_light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/screen_light.xml\
     vendor/xiaomi/plato/proprietary/vendor/etc/apdb/APDB_MT6895___W2230:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6895___W2230 \
     vendor/xiaomi/plato/proprietary/vendor/etc/apdb/APDB_MT6895___W2230_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6895___W2230_ENUM \
     vendor/xiaomi/plato/proprietary/vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.sensor.citsensorservice@1.1-service.rc \

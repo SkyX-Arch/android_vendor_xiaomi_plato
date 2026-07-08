@@ -29,6 +29,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/plato/proprietary/vendor/etc/camera_perfetto.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/camera_perfetto.cfg \
     vendor/xiaomi/plato/proprietary/vendor/etc/task_profiles_cameraopt.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles_cameraopt.json \
     vendor/xiaomi/plato/proprietary/vendor/etc/nr-city.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nr-city.xml \
+    vendor/xiaomi/plato/proprietary/vendor/etc/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
+    vendor/xiaomi/plato/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
     vendor/xiaomi/plato/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/plato/proprietary/vendor/etc/aee-config:$(TARGET_COPY_OUT_VENDOR)/etc/aee-config \
     vendor/xiaomi/plato/proprietary/vendor/etc/aee-commit:$(TARGET_COPY_OUT_VENDOR)/etc/aee-commit\

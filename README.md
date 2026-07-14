@@ -50,7 +50,6 @@ Integration depends on the ROM tree and extraction method (proprietary-files or 
 Used alongside:
 
 - Device tree: [`android_device_xiaomi_plato`](https://github.com/SkyX-Arch/android_device_xiaomi_plato)
-- Common tree: [`android_device_xiaomi_mt6895-common`](https://github.com/SkyX-Arch/android_device_xiaomi_mt6895-common)
 - Custom ROM builds ([crDroid](https://github.com/SkyX-Arch/crdroid-ota) / LineageOS-based ROMs)
 
 ---

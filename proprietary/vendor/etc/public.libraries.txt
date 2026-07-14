@@ -124,6 +124,12 @@ vendor.xiaomi.hardware.misys@2.0.so
 vendor.xiaomi.hardware.misys@3.0.so
 vendor.xiaomi.hardware.misys@4.0.so
 vendor.xiaomi.hardware.quickcamera-V1-ndk.so
+libOpenCL.so
+libnir_neon_driver_ndk.mtk.vndk.so
+libcmdl_ndk.mtk.vndk.so
+libarmnn_ndk.mtk.vndk.so
+libneuron_adapter_mgvi.so
+libmpbase.so
 
 # === Управление экраном и звуком ===
 libdisplayfeature.so

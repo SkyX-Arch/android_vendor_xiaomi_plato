@@ -543,7 +543,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/plato/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/xiaomi/plato/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/xiaomi/plato/proprietary/vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.beanpod.rc \
-    vendor/xiaomi/plato/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/xiaomi/plato/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
     vendor/xiaomi/plato/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/xiaomi/plato/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
@@ -591,7 +590,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/plato/proprietary/vendor/firmware/soc7_0_ram_mcu_1b_t_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_mcu_1b_t_1_hdr.bin \
     vendor/xiaomi/plato/proprietary/vendor/firmware/soc7_0_ram_wmmcu_1b_t_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_wmmcu_1b_t_1_hdr.bin \
     vendor/xiaomi/plato/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
-    vendor/xiaomi/plato/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
+    vendor/xiaomi/plato/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
+
+
+
 
 PRODUCT_PACKAGES += \
     com.xiaomi.plugin.arcsoftsr \
@@ -1727,7 +1729,6 @@ PRODUCT_PACKAGES += \
     ccci_mdinit \
     ccci_rpcd \
     netdagent \
-    chipinfo \
     conninfra_loader \
     em_hidl \
     fidoca_isee \
@@ -1786,6 +1787,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.15-impl \
     vendor_lib64_hw_vendor_mediatek_hardware_pq@2_15-impl_so \
     vendor.mediatek.hardware.pq@2.2-service
+
 
 PRODUCT_BOOT_JARS += \
     camerax-vendor-extensions \

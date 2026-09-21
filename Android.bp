@@ -2148,7 +2148,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -2199,7 +2199,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -2682,7 +2682,10 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libformatter",
+    name: "libformatter_mtk",
+    // Original file/SONAME from the device: consumers (libcodec2_mtk_vdec/venc)
+    // have DT_NEEDED "libformatter.so".
+    stem: "libformatter",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -6108,7 +6111,11 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmnl",
+    name: "libmnl_mt6895",
+    // Original file/SONAME from the device (mnld has DT_NEEDED "libmnl.so").
+    // Module name differs from external/libmnl (netlink lib, unrelated —
+    // this blob is the MTK GPS library).
+    stem: "libmnl",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -8378,6 +8385,10 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libaudioclient",
+                // AudioSystem::* moved from libaudioclient to libaudiobase
+                // (see frameworks/av/media/libaudioclient/Android.bp);
+                // this prebuilt still references the old layout.
+                "libaudiobase",
                 "libc++",
                 "libc",
                 "libm",
@@ -8494,6 +8505,10 @@ cc_prebuilt_library_shared {
                 "libui",
                 "libcutils",
                 "libaudioclient",
+                // AudioSystem::* moved from libaudioclient to libaudiobase
+                // (see frameworks/av/media/libaudioclient/Android.bp);
+                // this prebuilt still references the old layout.
+                "libaudiobase",
                 "liblog",
                 "libaudiotoolkit",
                 "libc++",
@@ -9565,6 +9580,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "libaudioclient_shim",
             ],
         },
     },
@@ -11129,7 +11145,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mnld",
             ],
             shared_libs: [
-                "libmnl",
+                "libmnl_mt6895",
                 "libcurl",
                 "libcutils",
                 "libnvram",
@@ -28624,8 +28640,8 @@ install_symlink {
 install_symlink {
     name: "vendor_lib64_libmnl_so",
     soc_specific: true,
-    installed_location: "lib64/libmnl.so",
-    symlink_target: "/vendor/lib64/mt6895/libmnl.so",
+    installed_location: "lib64/libmnl_mt6895.so",
+    symlink_target: "/vendor/lib64/mt6895/libmnl_mt6895.so",
 }
 
 install_symlink {

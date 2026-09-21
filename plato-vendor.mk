@@ -1452,7 +1452,7 @@ PRODUCT_PACKAGES += \
     libdre \
     libfile_op \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libfvaudio \
     libged \
     libgpu_aux \
@@ -1571,7 +1571,6 @@ PRODUCT_PACKAGES += \
     libaiselector \
     libdpframework \
     libgamehdr \
-    libmnl \
     libmtk_drvb \
     libneuralnetworks_sl_driver_mtk_prebuilt \
     libneuron_adapter_mgvi \

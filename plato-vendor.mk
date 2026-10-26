@@ -1535,7 +1535,8 @@ PRODUCT_PACKAGES += \
     librpc \
     librt_extamp_intf \
     libsn100u_fw \
-    libspeech_enh_lib \
+    libspeech_enh \
+    libavservices_minijail_vendor \
     libspeechparser_vendor \
     libstorage_otp \
     libsysenv \

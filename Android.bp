@@ -716,12 +716,41 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "libutils",
+                "libtinyxml2",
+                "libsensorndkbridge",
             ],
         },
     },
     compile_multilib: "64",
     relative_install_path: "hw/mt6895",
     prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libavservices_minijail_vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/libavservices_minijail_vendor.so"
+            ],
+            shared_libs: [
+                "libbase",
+                "libc++",
+                "libc",
+                "libdl",
+                "libm",
+                "libminijail",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    allow_undefined_symbols: true,
     soc_specific: true,
 }
 
@@ -774,6 +803,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "libstagefright_foundation",
             ],
         },
     },
@@ -5060,6 +5090,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "libtinyxml2",
             ],
         },
     },
@@ -5087,7 +5118,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libspeech_enh_lib",
+    name: "libspeech_enh",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -5095,7 +5126,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libspeech_enh_lib.so",
+                "proprietary/vendor/lib64/libspeech_enh.so",
             ],
             shared_libs: [
                 "libc++",
@@ -6008,6 +6039,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "libsensorndkbridge",
             ],
         },
     },
@@ -6193,6 +6225,7 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     relative_install_path: "mt6895",
+    allow_undefined_symbols: true,
     prefer: true,
     soc_specific: true,
 }
@@ -10580,6 +10613,7 @@ cc_prebuilt_binary {
                 "libc",
                 "libm",
                 "libdl",
+                "android.hardware.gnss-V1-ndk",
             ],
         },
     },
@@ -10623,6 +10657,7 @@ cc_prebuilt_binary {
                 "libc",
                 "libm",
                 "libdl",
+                "libavservices_minijail_vendor",
             ],
         },
     },
@@ -11166,6 +11201,7 @@ cc_prebuilt_binary {
                 "libc",
                 "libm",
                 "libdl",
+                "libsensorndkbridge",
             ],
         },
     },
@@ -12997,6 +13033,9 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "libalsautils",
+                "libtinyxml2",
+                "libstagefright_foundation",
             ],
         },
     },
@@ -13066,6 +13105,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "libutils",
             ],
         },
     },
@@ -25062,6 +25102,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "libutils",
             ],
         },
     },
